@@ -34,3 +34,9 @@
 *.targetver.h
 *.db
 LinkedListDemo/LinkedList/ReadMe.txt
+*.ilk
+*.tlog
+*.idb
+*.opendb
+*.log
+LinkedListDemo/LinkedList/stdafx.cpp
