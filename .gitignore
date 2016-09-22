@@ -26,3 +26,11 @@
 *.exe
 *.out
 *.app
+*.vcxproj
+*.suo
+*.filters
+*.stdafx.h
+*.stdafx.cpp
+*.targetver.h
+*.db
+LinkedListDemo/LinkedList/ReadMe.txt
