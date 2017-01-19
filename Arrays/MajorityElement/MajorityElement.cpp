@@ -7,11 +7,11 @@ using namespace std;
 
 int main()
 {
-	int n(0), num(0), maj_ele(0), count(0);
+	int n(0), num(0), count(0);
 	cout << "Enter the no of elements " << endl;
 	cin >> n;
 	int *arr = new int[n];
-	maj_ele = ceil(n / 2);
+	int maj_ele = ceil(n / 2);
 	for (int i = 0; i < n; i++)
 	{
 		cin >> arr[i];
