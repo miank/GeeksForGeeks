@@ -40,3 +40,10 @@ LinkedListDemo/LinkedList/ReadMe.txt
 *.opendb
 *.log
 LinkedListDemo/LinkedList/stdafx.cpp
+*.txt
+*targetver.h
+*pdb
+*stdafx.h
+*stdafx.cpp
+*sln
+*ipch
