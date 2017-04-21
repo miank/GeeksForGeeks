@@ -10,11 +10,20 @@ struct node
 	node *next;
 };
 
+void printList(node *n)
+{
+	while (n != nullptr)
+	{
+		cout << n->data << endl;
+		n = n->next;
+	}
+}
+
 int main()
 {
-	node *head = nullptr;
-	node *second = nullptr;
-	node *third = nullptr;
+	node *head = new node();
+	node *second = new node();
+	node *third = new node();
 
 	head->data = 1;
 	head->next = second;
@@ -25,7 +34,7 @@ int main()
 	third->data = 3;
 	third->next = nullptr;
 
-
+	printList(head);
     return 0;
 }
 
