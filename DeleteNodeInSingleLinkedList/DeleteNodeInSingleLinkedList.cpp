@@ -72,9 +72,10 @@ void Display()
 	node *p = start;
 	while (p != nullptr)
 	{
-		cout << p->data << " ";
+		cout << p->data << endl;
 		p = p->next;
 	}
+	cout << endl;
 }
 
 // Creating the node
@@ -111,7 +112,6 @@ int main()
 	node *p(nullptr);
 
 	cin >> t;
-
 	for (int i(0); i < t; i++)
 	{
 		cin >> n;
@@ -119,13 +119,6 @@ int main()
 		{
 			cin >> ele;
 			node *temp = CreateNode(ele);
-		}
-
-		node *q = start;
-		while (q != nullptr)
-		{
-			cout << q->data << " ";
-			q = q->next;
 		}
 		cin >> key;
 		DeleteNode(key);
