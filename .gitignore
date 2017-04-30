@@ -47,3 +47,5 @@ LinkedListDemo/LinkedList/stdafx.cpp
 *stdafx.cpp
 *sln
 *ipch
+*.db-shm
+*.db-wal
