@@ -18,15 +18,10 @@ int main()
 			cin >> arr[i];
 		}
 
-		for (int i = 0; i < n; i++)
-		{
-			cout << arr[i];
-		}
-
 		for (int i = n - 1; i >= 0; i--)
 		{
-			sum = arr[i] + carry;
-			if (sum > 9)
+			arr[i] = arr[i] + carry;
+			if (arr[i] > 9 & i != 0)
 			{
 				carry = 1;
 				arr[i] = 0;
@@ -36,9 +31,13 @@ int main()
 				carry = 0;
 			}
 		}
+
+		for (int i = 0; i < n; i++)
+		{
+			cout << arr[i] << endl;
+		}
 		t--;
 	}
-	cout << sum << endl;
     return 0;
 }
 
