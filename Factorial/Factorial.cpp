@@ -6,19 +6,21 @@ using namespace std;
 
 int main()
 {
-	int t(0), n(1), fact(1);
-	cin >> t;
-
-	for (int i = 0; i < t; i++)
+	int t(0);
+	cin >> t;	
+	
+	while (t > 0)
 	{
+		long int n(1);
 		cin >> n;
+		long int fact(1);
 
-		while (n > 0)
+		for (int i = 1; i <= n; i++)
 		{
-			fact = fact * n;
-			n--;
+			fact = fact * i;
 		}
 		cout << fact << endl;
+		t--;
 	}
     return 0;
 }
