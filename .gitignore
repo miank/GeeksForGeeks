@@ -49,3 +49,4 @@ LinkedListDemo/LinkedList/stdafx.cpp
 *ipch
 *.db-shm
 *.db-wal
+*.sqlite
