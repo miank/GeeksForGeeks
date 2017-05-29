@@ -50,3 +50,4 @@ LinkedListDemo/LinkedList/stdafx.cpp
 *.db-shm
 *.db-wal
 *.sqlite
+*.json
