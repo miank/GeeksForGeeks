@@ -15,9 +15,11 @@ int main()
 		cin >> n;
 		for (int i = 1; i <= n; i++)
 		{
-			sum = sum * i;
+			cin >> ele;
+			sum = sum * ele;
 		}
 		cout << sum << endl;
+		sum = 1;
 		t--;
 	}
 
