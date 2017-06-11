@@ -40,3 +40,40 @@ int main()
     return 0;
 }
 
+
+// Another solution 
+
+
+//#include <iostream>
+//#include<string>
+//
+//using namespace std;
+//
+//int main() {
+//
+//	int T, i;
+//	int N;
+//	string s;
+//	cin >> T;
+//	int count;
+//
+//	while (T--) {
+//		count = 0;
+//		cin >> s;
+//		N = s.length();
+//		//cout << N;
+//		//cout << s[0];
+//		for (i = 1; i < N; i++) {
+//			if (s[0] == s[i])
+//				count++;
+//		}
+//		if (count == (N - 1))
+//			cout << "YES" << endl;
+//		else
+//			cout << "NO" << endl;
+//	}
+//
+//
+//	return 0;
+//}
+
