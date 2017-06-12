@@ -12,6 +12,7 @@ int main()
 	while (t > 0)
 	{
 		cin >> num;
+
 		if (num == 2) {
 			cout << "YES" << endl;
 			return 0;
