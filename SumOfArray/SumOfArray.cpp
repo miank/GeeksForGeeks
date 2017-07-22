@@ -1,5 +1,4 @@
-// SumOfArray.cpp : Defines the entry point for the console application.
-//
+// SumOfArray.cpp 
 
 #include "stdafx.h"
 #include <iostream>
