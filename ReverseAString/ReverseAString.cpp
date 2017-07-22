@@ -1,4 +1,4 @@
-// ReverseAString.cpp 
+// ReverseAString.cpp
 
 #include "stdafx.h"
 #include <iostream>
@@ -18,6 +18,5 @@ int main()
 		reverse(str.begin(), str.end());
 		cout << str << endl;
 	}
-    return 0;
+	return 0;
 }
-
