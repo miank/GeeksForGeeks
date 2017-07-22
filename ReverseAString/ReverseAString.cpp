@@ -3,6 +3,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 
 int main()
