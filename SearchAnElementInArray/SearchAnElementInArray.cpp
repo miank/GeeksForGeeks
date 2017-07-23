@@ -1,5 +1,4 @@
-// SearchAnElementInArray.cpp : Defines the entry point for the console application.
-//
+// SearchAnElementInArray.cpp 
 
 #include "stdafx.h"
 #include <iostream>
@@ -19,6 +18,7 @@ int main()
 			cin >> arr[i];
 		}
 		cin >> ele;
+		flag = 0;
 		for (int i = 0; i < n; i++)
 		{
 			if (ele == arr[i])
