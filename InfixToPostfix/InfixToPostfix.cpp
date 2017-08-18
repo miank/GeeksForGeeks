@@ -1,4 +1,4 @@
-// InfixToPostfix.cpp 
+// InfixToPostfix.cpp  
 
 #include "stdafx.h"
 #include <iostream>
