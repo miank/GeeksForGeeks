@@ -62,6 +62,7 @@ void InfixToPostfix(string str)
 		}
 	}
 
+	// Pop all the remaining elements from the stack
 	while (strStack.top() != 'N')
 	{
 		char c = strStack.top();
