@@ -19,7 +19,7 @@ int prec(char str)
 		return -1;
 }
 
-string InfixToPostfix(string str)
+void InfixToPostfix(string str)
 {
 	stack<char> strStack;
 	strStack.push('N');
@@ -30,7 +30,7 @@ string InfixToPostfix(string str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z' || str[i] >= 'A' && str[i] <= 'Z')
 		{
-			postfixStr += str;
+			postfixStr += str[i];
 		}
 		else if (str[i] == '(')
 		{
@@ -58,6 +58,7 @@ string InfixToPostfix(string str)
 				strStack.pop();
 				postfixStr += c;
 			}
+			strStack.push(str[i]);
 		}
 	}
 
@@ -67,7 +68,7 @@ string InfixToPostfix(string str)
 		strStack.pop();
 		postfixStr += c;
 	}
-	return postfixStr;
+	cout << postfixStr << endl;
 }
 
 int main()
@@ -79,8 +80,7 @@ int main()
 	{
 		string str("");
 		cin >> str;
-		string s = InfixToPostfix(str);
-		cout << str << endl;
+		InfixToPostfix(str);
 		testCase--;
 	}
 
