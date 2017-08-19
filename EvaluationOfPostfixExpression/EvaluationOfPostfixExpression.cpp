@@ -48,7 +48,6 @@ int main()
 {
 	int t(0);
 	cin >> t;
-
 	while (t > 0)
 	{
 		string str;
