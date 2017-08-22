@@ -45,7 +45,6 @@ int main()
 	q.push(80);
 	q.push(90);
 	q.push(100);
-
 	reverseQueue(q);
 	Print(q);
     return 0;
