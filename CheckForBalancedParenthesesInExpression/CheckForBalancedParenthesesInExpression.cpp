@@ -10,6 +10,8 @@ bool BalanceParenthesis(string expr)
 {
 	stack<char> st;
 	int l = expr.size();
+	char a, b, c;
+
 	for (int i = 0; i < l; i++)
 	{
 		if (expr[i] == '(' || expr[i] == '{' || expr[i] == '[')
@@ -18,9 +20,34 @@ bool BalanceParenthesis(string expr)
 		}
 		else
 		{
-
+			switch (expr[i])
+			{
+			case ')':
+				a = st.top();
+				st.pop();
+				if (a == '{' || a == '[')
+					cout << "Not balanced" << endl;
+				break;
+			case '}':
+				a = st.top();
+				st.pop();
+				if (a == '(' || a == '[')
+					cout << "Not balanced" << endl;
+				break;
+			case ']':
+				a = st.top();
+				st.pop();
+				if (a == '{' || a == '(')
+					cout << "Not balanced" << endl;
+				break;
+			}
 		}
 	}
+
+	if (st.empty())
+		return true;
+	else
+		return false;
 }
 
 int main()
@@ -34,7 +61,7 @@ int main()
 		cin >> str;
 		if (BalanceParenthesis(str))
 		{
-			cout << "Balanced " << endl;
+			cout << "balanced " << endl;
 		}
 		else
 		{
@@ -42,6 +69,6 @@ int main()
 		}
 		t--;
 	}
-    return 0;
+	return 0;
 }
 
