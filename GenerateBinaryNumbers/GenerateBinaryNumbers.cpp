@@ -42,13 +42,14 @@ int main()
 			reverse(queue);
 			while (!queue.empty())
 			{
-				cout << queue.front() << " ";
+				cout << queue.front();
 				queue.pop();
 			}
-			cout << endl;
+			cout << " ";
 		}
 		queue.empty();
 		t--;
+		cout << endl;
 	}
 	return 0;
 }
