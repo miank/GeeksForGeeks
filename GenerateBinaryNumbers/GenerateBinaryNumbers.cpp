@@ -3,7 +3,18 @@
 #include "stdafx.h"
 #include <iostream>
 #include <queue>
+#include <algorithm>
 using namespace std;
+
+void reverse(queue<int> &q)
+{
+	if (q.empty())
+		return;
+	int num = q.front();
+	q.pop();
+	reverse(q);
+	q.push(num);
+}
 
 int main()
 {
@@ -24,23 +35,21 @@ int main()
 			while (temp != 0)
 			{
 				q = temp / 2;
-
 				rem = temp % 2;
 				temp = q;
 				queue.push(rem);
 			}
-
+			reverse(queue);
 			while (!queue.empty())
 			{
 				cout << queue.front() << " ";
 				queue.pop();
 			}
 			cout << endl;
-		}		
-		
+		}
 		queue.empty();
 		t--;
 	}
-    return 0;
+	return 0;
 }
 
