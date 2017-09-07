@@ -57,7 +57,7 @@ int pop(queue<int> &q)
 
 int main()
 {
-	queue<int> q;	
-    return 0;
+	queue<int> q;
+	return 0;
 }
 
