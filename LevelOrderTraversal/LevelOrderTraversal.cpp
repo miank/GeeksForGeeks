@@ -23,6 +23,7 @@ void levelOrder(Node* node)
 	while (!q.empty())
 	{
 		Node* current = q.front();
+		q.pop();
 		cout << current->data << endl;
 		if (current->left != nullptr)
 			q.push(current->left);
@@ -30,6 +31,9 @@ void levelOrder(Node* node)
 			q.push(current->right);
 	}
 }
+
+// Time completixty = 0(n)
+// Space Complexity = 0(1) - best
 
 int main()
 {
