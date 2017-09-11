@@ -7,7 +7,7 @@ using namespace std;
 
 struct Node
 {
-	int data;
+	int key;
 	Node *left, *right;
 };
 
@@ -26,13 +26,14 @@ public:
 	}
 
 	void Insert(int data);
+	int Display();
 };
 
 void BinaryTree::Insert(int item)
 {
 	Node *newNode = new Node;
 	Node *parent;
-	newNode->data = item;
+	newNode->key = item;
 	newNode->left = nullptr;
 	newNode->right = nullptr;
 
@@ -50,16 +51,44 @@ void BinaryTree::Insert(int item)
 		while (ptr != nullptr)
 		{
 			parent = ptr;
-			if (item < ptr->data)
+			if (item < ptr->key)
 				ptr = ptr->left;
 			else
 				ptr = ptr->right;
 		}
-		if (item < parent->data)
+		if (item < parent->key)
 			parent->left = newNode;
 		else
 			parent->right = newNode;
 	}
+}
+
+int BinaryTree::Display()
+{
+	Node *temp = root;
+	int total(0);
+	if (root == nullptr)
+	{
+		cout << "Tree is empty " << endl;
+		return 0;
+	}
+
+	queue<Node *> q;
+	q.push(temp);
+
+	while (!q.empty())
+	{
+		Node *current = q.front();
+		q.pop();
+		total += current->key;
+
+		cout << current->key << endl;
+		if (current->left != nullptr)
+			q.push(current->left);
+		if (current->right != nullptr)
+			q.push(current->right);
+	}
+	return total;
 }
 
 int main()
@@ -72,6 +101,8 @@ int main()
 	b.Insert(40);
 	b.Insert(45);
 	b.Insert(20);
+	int sum = b.Display();
+	cout << sum << endl;
     return 0;
 }
 
