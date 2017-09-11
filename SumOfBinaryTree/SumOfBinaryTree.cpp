@@ -69,7 +69,7 @@ int BinaryTree::Display()
 	int total(0);
 	if (root == nullptr)
 	{
-		cout << "Tree is empty " << endl;
+		/*cout << "Tree is empty " << endl;*/
 		return 0;
 	}
 
