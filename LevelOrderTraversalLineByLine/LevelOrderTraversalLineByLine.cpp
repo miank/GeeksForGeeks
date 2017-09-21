@@ -7,24 +7,23 @@
 using namespace std;
 
 // A Binary Tree Node
-struct node
+struct Node
 {
-	struct node *left;
 	int data;
-	struct node *right;
+	Node* left, *right;
 };
 
 // Iterative method to do level order traversal line by line
-void printLevelOrder(node *root)
+void printLevelOrder(Node *node)
 {
 	// Base Case
-	if (root == NULL)  return;
+	if (node == NULL)  return;
 
 	// Create an empty queue for level order tarversal
-	queue<node *> q;
+	queue<Node *> q;
 
 	// Enqueue Root and initialize height
-	q.push(root);
+	q.push(node);
 
 	while (1)
 	{
@@ -38,7 +37,7 @@ void printLevelOrder(node *root)
 		// nodes of next level
 		while (nodeCount > 0)
 		{
-			node *node = q.front();
+			Node *node = q.front();
 			cout << node->data << " ";
 			q.pop();
 			if (node->left != NULL)
@@ -47,14 +46,15 @@ void printLevelOrder(node *root)
 				q.push(node->right);
 			nodeCount--;
 		}
-		cout << endl;
+		cout << "$ ";
 	}
+	
 }
 
 // Utility function to create a new tree node
-node* newNode(int data)
+Node* newNode(int data)
 {
-	node *temp = new node;
+	Node *temp = new Node;
 	temp->data = data;
 	temp->left = NULL;
 	temp->right = NULL;
@@ -65,7 +65,7 @@ node* newNode(int data)
 int main()
 {
 	// Let us create binary tree shown in above diagram
-	node *root = newNode(1);
+	Node *root = newNode(1);
 	root->left = newNode(2);
 	root->right = newNode(3);
 	root->left->left = newNode(4);
