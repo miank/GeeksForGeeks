@@ -51,3 +51,8 @@ LinkedListDemo/LinkedList/stdafx.cpp
 *.db-wal
 *.sqlite
 *.json
+/CheckIfTwoArraysAreEqualOrNot/CheckIfTwoArraysAreEqualOrNot.cpp
+/DifferenceBetweenHighestAndLowestOccurrence/DifferenceBetweenHighestAndLowestOccurrence.cpp
+/FindFirstRepeatedCharacter/FindFirstRepeatedCharacter.cpp
+/LinkedListInsertion/Debug
+/ReverseWordsInAGivenString
