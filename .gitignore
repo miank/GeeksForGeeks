@@ -56,3 +56,12 @@ LinkedListDemo/LinkedList/stdafx.cpp
 /FindFirstRepeatedCharacter/FindFirstRepeatedCharacter.cpp
 /LinkedListInsertion/Debug
 /ReverseWordsInAGivenString
+*.xml
+*.js
+*.xdt
+*.nupkg
+*.config
+*.ps1
+*.targets
+*.cs
+*.user
