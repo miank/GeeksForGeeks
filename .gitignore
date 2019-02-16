@@ -31,7 +31,7 @@
 *.filters
 *.stdafx.h
 *.stdafx.cpp
-*.targetver.h
+*targetver.h
 *.db
 *pch.h
 *pch.cpps
@@ -44,4 +44,20 @@
 
 *CL.write.1.tlog
 *CL.read.1.tlog
+*link.write.1.tlog
+*link.read.1.tlog
 *ilk
+*vc141.pdb
+
+*pch.cpp
+.vs/GeeksForGeeks/v15/Browse.VC.opendb
+.vs/GeeksForGeeks/v15/Solution.VC.db-shm
+.vs/GeeksForGeeks/v15/Solution.VC.db-wal
+AddTwoFractions/Debug/AddTwoFractions.tlog/CL.command.1.tlog
+AddTwoFractions/Debug/AddTwoFractions.tlog/AddTwoFractions.lastbuildstate
+
+*link.command.1.tlog
+*pdb
+*lastbuildstate
+*tlog
+*stdafx.cpp
