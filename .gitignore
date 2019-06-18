@@ -63,3 +63,5 @@ AddTwoFractions/Debug/AddTwoFractions.tlog/AddTwoFractions.lastbuildstate
 *stdafx.cpp
 /.vs/GeeksForGeeks/v16/Preview
 /.vs
+*.sdf
+*.opensdf
