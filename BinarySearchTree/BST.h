@@ -9,10 +9,11 @@ private:
 		node *right;
 	};
 	node *root;
+	void AddLeafPrivate(int key, node *ptr);
+	void PrintInOrderPrivate(node *ptr);
 public:
 	BST();
-
 	node *CreateKey(int key);
 	void AddLeaf(int key);
-	void AddLeafPrivate(int key, node *ptr);
+	void PrintInOrder();
 };
