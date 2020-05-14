@@ -12,6 +12,7 @@ private:
 public:
 	BST();
 
-	node *CreateKey(int data);
-
+	node *CreateKey(int key);
+	void AddLeaf(int key);
+	void AddLeafPrivate(int key, node *ptr);
 };
