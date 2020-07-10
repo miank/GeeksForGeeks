@@ -1,5 +1,4 @@
-// BinarySorting.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// BinarySorting.cpp 
 
 #include "pch.h"
 #include <iostream>
